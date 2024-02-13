@@ -1,5 +1,8 @@
 package edu.icet.dto;
 
+import lombok.Data;
+
+@Data
 public class StudentDto {
 
     private String firstName;

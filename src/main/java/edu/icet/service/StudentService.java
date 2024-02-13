@@ -1,7 +1,9 @@
 package edu.icet.service;
 
-import org.springframework.stereotype.Service;
+import edu.icet.dto.StudentDto;
+import edu.icet.entity.Student;
 
-@Service
+
 public interface StudentService {
+    void addStudent(StudentDto student);
 }
