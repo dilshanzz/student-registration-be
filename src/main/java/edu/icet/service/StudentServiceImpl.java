@@ -8,6 +8,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -51,6 +52,13 @@ public class StudentServiceImpl implements StudentService {
             return  true;
         }
         return false;
+    }
+
+    @Override
+    public List<Student> getBooks() {
+
+
+        return (List<Student>) repository.findAll();
     }
 
 }

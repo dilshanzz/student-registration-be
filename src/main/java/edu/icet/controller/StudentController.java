@@ -33,4 +33,7 @@ public class StudentController {
                 "Not found";
 
     }
+    public  List<Student> getAllStudents(){
+        return service.getBooks();
+    }
 }
