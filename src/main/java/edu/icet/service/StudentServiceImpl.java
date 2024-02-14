@@ -5,16 +5,18 @@ import edu.icet.dto.StudentDto;
 import edu.icet.entity.Student;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
+@RequiredArgsConstructor
 
 public class StudentServiceImpl implements StudentService {
 
 
-     StudentRepository repository;
+    final StudentRepository repository;
 
     ModelMapper mapper;
 
@@ -32,6 +34,23 @@ public class StudentServiceImpl implements StudentService {
 //        student1.setContact(student.getContact());
 
         repository.save(student1);
+    }
+
+    @Override
+    public Student searchStudById(Long id) {
+        Optional<Student> student =repository.findById(id);
+
+        return
+               mapper.map(student,Student.class);
+    }
+
+    @Override
+    public boolean deleteStudent(Long id) {
+        if(repository.existsById(id)){
+            repository.deleteById(id);
+            return  true;
+        }
+        return false;
     }
 
 }

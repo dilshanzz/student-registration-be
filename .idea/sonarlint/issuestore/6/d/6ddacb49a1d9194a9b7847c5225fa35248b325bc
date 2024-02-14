@@ -1,4 +1,5 @@
 
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8û”ã›Ú1
-X	java:S125"<This block of commented-out lines of code should be removed.(¡Ï¡8ƒ•ã›Ú1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8šº¤©Ú1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8›º¤©Ú1
