@@ -1,7 +1,8 @@
 package edu.icet.service;
 
 import edu.icet.dto.Student;
+import edu.icet.entity.StudentEntity;
 
 public interface StudentService {
-    void addStudent(Student student);
+    StudentEntity addStudent(Student student);
 }

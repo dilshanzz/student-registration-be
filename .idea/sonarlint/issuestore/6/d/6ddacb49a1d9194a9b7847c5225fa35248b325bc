@@ -1,8 +1,4 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(Ÿ’‹É8ºãæ–Û1
-G	java:S106"+Replace this use of System.out by a logger.(„íí8½¾ë”Û1
-]	java:S125"<This block of commented-out lines of code should be removed.(Å˜ÿ³üÿÿÿÿ8¶üæ–Û1
-Y
-java:S1128"<Remove this unused import 'edu.icet.service.StudentService'.(Ç ³8¶üæ–Û1
-p
-java:S1128"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ë8ÜÇñ–Û1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Çœ÷˜Û1
+G	java:S106"+Replace this use of System.out by a logger.(„íí8½¾ë”Û1
