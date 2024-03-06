@@ -70,3 +70,11 @@ G.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,f\0\f0
 Q.idea/sonarlint/securityhotspotstore/4/2/42aa4a6d668ab791102e865a30bcacb85abe4144,b\a\ba8120d2dfaaa60a28d54bdf1e04744fe59a217f
 w
 G.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,e\d\ed67eb178d523a4b3f117dcbe0eda5196367ceec
+h
+8src/main/java/edu/icet/service/StudentNativeService.java,b\9\b909ad0247e261ee052abce4d7e029150c8a0ec2
+q
+Asrc/main/java/edu/icet/service/impl/StudentNativeServiceImpl.java,7\b\7bf154af51cc3de13e6987640ffebff6ba5cdeba
+h
+8src/main/java/edu/icet/repository/StudentNativeRepo.java,a\3\a3da4cb3a427b60ba8b93ee144153a44111ebec8
+m
+=src/main/java/edu/icet/repository/impl/StudentNativeImpl.java,7\a\7a5d2765a217492cf981f1507eff556732496b91

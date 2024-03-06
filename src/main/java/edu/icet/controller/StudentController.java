@@ -38,6 +38,14 @@ public class StudentController {
         return studentService.getStudents();
     }
 
+
+
+    @DeleteMapping("/{id}")
+    public String removeStudent(@PathVariable Long id){
+       return studentService.removeStudent(id) ? "Student Removed" :
+                "Operation Faild";
+    }
+
 //    @DeleteMapping("/{id}")
 //    public ResponseEntity removeStudent(@PathVariable Long id){
 //
@@ -45,11 +53,12 @@ public class StudentController {
 //                ResponseEntity.ok(new Response())
 
 
-    @DeleteMapping("/{id}")
-    public Response removeStudent(@PathVariable Long id){
 
-        return studentService.removeStudent(id) ? new Response("Student removes") :
-                new Response("Operation failed");
+//    @DeleteMapping("/{id}")
+//    public Response removeStudent(@PathVariable Long id){
+//
+//        return studentService.removeStudent(id) ? new Response("Student removes") :
+//                new Response("Operation failed");
 
 //       return studentService.removeStudent(id) ? "student removed"
 //               : "operation failed" ;
@@ -61,5 +70,5 @@ public class StudentController {
 //            return ("Student Removed");
 //        }
 //        return ("operation failed");
-    }
+   // }
 }
