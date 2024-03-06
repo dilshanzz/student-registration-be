@@ -1,6 +1,10 @@
 
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8³ğ¡á1
-G	java:S106"+Replace this use of System.out by a logger.(„íí8¸ğ¡á1
-]	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8¹ğ¡á1
-X	java:S125/"<This block of commented-out lines of code should be removed.(Ìöûñ8Àğ¡á1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ãèí¤á1
+G	java:S106"+Replace this use of System.out by a logger.(„íí8Ëèí¤á1
+]	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Ëèí¤á1
+X	java:S125*"<This block of commented-out lines of code should be removed.(Ö‚Óİ8Ïèí¤á1
+]	java:S1257"<This block of commented-out lines of code should be removed.(¹Ë¦Åşÿÿÿÿ8Ñèí¤á1
+X	java:S125;"<This block of commented-out lines of code should be removed.(Ìöûñ8Ñèí¤á1
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Òèí¤á1

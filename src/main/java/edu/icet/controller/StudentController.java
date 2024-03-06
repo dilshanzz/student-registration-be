@@ -1,9 +1,11 @@
 package edu.icet.controller;
 
+import edu.icet.controller.Response.Response;
 import edu.icet.dto.Student;
 import edu.icet.entity.StudentEntity;
 import edu.icet.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,18 +38,28 @@ public class StudentController {
         return studentService.getStudents();
     }
 
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity removeStudent(@PathVariable Long id){
+//
+//        return studentService.removeStudent(id) ?
+//                ResponseEntity.ok(new Response())
+
+
     @DeleteMapping("/{id}")
-    public String removeStudent(@PathVariable Long id){
+    public Response removeStudent(@PathVariable Long id){
 
-       return studentService.removeStudent(id) ? "student removed"
-               : "operation failed" ;
+        return studentService.removeStudent(id) ? new Response("Student removes") :
+                new Response("Operation failed");
 
-    }
+//       return studentService.removeStudent(id) ? "student removed"
+//               : "operation failed" ;
+
+
 
 //        boolean isRemoved =  studentService.removeStudent(id);
 //        if( isRemoved){
 //            return ("Student Removed");
 //        }
 //        return ("operation failed");
-//    }
+    }
 }
